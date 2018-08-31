@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Frijole|Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascript/game.js"></script>
+</head>
+<body>
+    <div class="page-header pg-title">
+        <h1 class="ttl"><span class="glyphicon glyphicon-hourglass"></span> TRIVIA GAME <span class="glyphicon glyphicon-hourglass"></span></h1>
+    </div>
+
+    <div class="container">
+        <div class="row" id="ques_div">
+            <div class="col-md-10 col-md-offset-1">
+                <center>
+                    <div class="jumbotron timer-class" style="padding: 0px;">
+                        <h2> Time left: </h2>
+                        <label id="rem-time"></label>
+                    </div>
+                </center>
+
+                <div class="jumbotron jumbo-ques">
+                    <p> What is Popeye's favorite food?</p>
+                    <input type="radio" name="Q1" value="op1_1"> Hominy
+                    <input type="radio" name="Q1" value="op1_2" class="radio-style"> Lettuce
+                    <input type="radio" name="Q1" value="op1_3" class="radio-style"> Spinach
+                    <input type="radio" name="Q1" value="op1_4" class="radio-style"> Pizza
+                </div>
+
+                <div class="jumbotron jumbo-ques">
+                    <p> This woman was Popeye's girlfriend?</p>
+                    <input type="radio" name="Q2" value="op2_1"> Linseed Oil
+                    <input type="radio" name="Q2" value="op2_2" class="radio-style"> Olive Oyl
+                    <input type="radio" name="Q2" value="op2_3" class="radio-style"> Motor Oil
+                    <input type="radio" name="Q2" value="op2_4" class="radio-style"> Olive Oil
+                </div>
+
+                <div class="jumbotron jumbo-ques">
+                    <p> What is the name of Popeye's father?</p>
+                    <input type="radio" name="Q3" value="op3_1"> Poopdeck Pappy
+                    <input type="radio" name="Q3" value="op3_2" class="radio-style"> Mister Mom
+                    <input type="radio" name="Q3" value="op3_3" class="radio-style"> Da Da
+                    <input type="radio" name="Q3" value="op3_4" class="radio-style"> Father Christmas
+                </div>
+
+                <div class="jumbotron jumbo-ques">
+                    <p> What is the name of Popeye's mooching friend?</p>
+                    <input type="radio" name="Q4" value="op4_1"> Skuzzlebut
+                    <input type="radio" name="Q4" value="op4_2" class="radio-style">Slappy
+                    <input type="radio" name="Q4" value="op4_3" class="radio-style"> Wimpy
+                    <input type="radio" name="Q4" value="op4_4" class="radio-style"> Scrappy
+                </div>
+
+                <div class="jumbotron jumbo-ques">
+                    <p> What food does Popeye's mooching friend love most of all?</p>
+                    <input type="radio" name="Q5" value="op5_1"> Tacos
+                    <input type="radio" name="Q5" value="op5_2" class="radio-style"> Hamburgers
+                    <input type="radio" name="Q5" value="op5_3" class="radio-style"> Ice Cream
+                    <input type="radio" name="Q5" value="op5_4" class="radio-style"> Calamari
+                </div>
+
+                <div class="jumbotron jumbo-ques">
+                    <p> Like any hero, Popeye also has many enemies. One group of enemies he encountered on an island where he found his long-lost father. What were these creatures known as??</p>
+                    <input type="radio" name="Q6" value="op6_1"> Elves
+                    <input type="radio" name="Q6" value="op6_2" class="radio-style"> Trolls
+                    <input type="radio" name="Q6" value="op6_3" class="radio-style"> Goons
+                    <input type="radio" name="Q6" value="op6_4" class="radio-style"> Orcs
+                </div>
+            </div>
+
+
+            <div class="row btn-row">
+                <input type="submit" value="Click To Start" id="game-start" class="btn btn-primary btn-start" />
+
+                <input type="submit" value="Done" id="game-done" class="btn btn-primary btn-start" />
+            </div>
+
+        </div>
+
+        <div class="row" id="res_div">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="page-header score-title">
+                    <h3><span class="glyphicon glyphicon-gift"></span>&nbsp;&nbsp; Your Score &nbsp;&nbsp; <span class="glyphicon glyphicon-gift"></span></h3>
+                    <p><strong> Right Answer: </strong></p><strong><label id="r-ans"></label></strong><br />
+                    <p><strong> Wrong Answer: </strong></p><strong><label id="w-ans"></label></strong><br />
+                    <p><strong> Unanswer: </strong></p><strong><label id="u-ans"></label></strong><br />
+
+                    <input type="submit" value="New Game" id="new-game" class="btn btn-primary btn-new" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
